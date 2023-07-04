@@ -10,7 +10,7 @@ const getSum = () => {
 	pricesArr.forEach((item) =>{
 		sum=sum+Number(item.innerText);
 	});
-	const table=document.getElementsByTagName("table");
+	const table=document.getElementsByTagName("table")[0];
 	const tr=document.createElement("tr");
 	const td=document.createElement("td");
 	td.innerText=`Total price is ${sum}`;
